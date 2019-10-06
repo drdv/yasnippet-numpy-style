@@ -1,10 +1,10 @@
 # -*- mode: snippet -*-
 #name : def_
 #key : def_
-#contributor : Dimitrov Dimitar
+#contributor : MATSUBARA Naoya (minor modifications by Dimitar Dimitrov)
 # --
 def ${1:function}(${2:args}):
     """${3:Description.}
 
-    params_$0
+    param_$0
     """

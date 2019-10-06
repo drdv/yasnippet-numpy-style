@@ -1,8 +1,8 @@
 # -*- mode: snippet -*-
-#name : parameters
-#key : parameters
+#name : param_
+#key : param_
 #type : command
-#contributor : MATSUBARA Naoya
+#contributor : MATSUBARA Naoya (minor modifications by Dimitar Dimitrov)
 # --
 
 (flet ((parse-args
@@ -34,7 +34,7 @@
         (let ((count 0))
           (dolist (narg arg-list template)
             (setq template
-                  (format (concat "%s${%d:%s: ${%d:type}\n"
+                  (format (concat "%s${%d:%s : :obj:\\`${%d:type}\\`\n"
                                   (make-string python-indent ? )
                                   "${%d:description}\n}")
                           template

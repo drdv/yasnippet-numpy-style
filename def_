@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+#name : def_
+#key : def_
+#contributor : Dimitrov Dimitar
+# --
+def ${1:function}(${2:args}):
+    """${3:Description.}
+
+    params_$0
+    """

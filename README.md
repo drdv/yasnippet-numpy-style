@@ -4,8 +4,12 @@ yasnippet-numpy-style
 Minor tweaks of the code in
 [yasnippet-numpy-style](https://github.com/marubu/yasnippet-numpy-style).
 
-- One way of getting the snippets automatically when installing `elpy` (there
-  might be a better way: probably something using `:ensure-system-package`):
+Installation
+=============
+
+- One way of getting the snippets automatically when installing `elpy` is to put
+  the following in yout `init.el` (there might be a better way: probably
+  something using `:ensure-system-package`):
 
 ```
 (use-package elpy
@@ -21,3 +25,7 @@ Minor tweaks of the code in
 	(dolist (snippet '("def_" "param_"))
 	  (shell-command (concat "wget -P " dir " " github-raw snippet))))))
 ```
+
+- Alternatively, one could manually copy the `def_` and `param_` files in the
+  `snippets/python-mode` subdirectory of the package installation directory of
+  `elpy`.
